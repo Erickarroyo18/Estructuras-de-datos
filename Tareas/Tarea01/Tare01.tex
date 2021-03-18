@@ -109,15 +109,17 @@ public static int problema2(int n){
     \textbf{Problema 3}
     \begin{lstlisting}[frame = single]
 public static int problema3(int n){
-    int x = 0;
-    for(int i = 0; i < n; i ++){
-       for(int j = 1; j < n; j++){
-           x++;
+    int x = 0;---------> 1
+    for(int i = 0; i < n; i ++){---------> n
+       for(int j = 1; j < n; j++){------->n^2
+           x++;--------->n^2
        }
     }
-    return x;
+    return x;-------->1
 }
 \end{lstlisting}
+ %solución
+    \textbf{\textcolor{red}{Solución:}} La ecuación es: $2n^2 + n +1$ , por lo tanto, solo tomamos al exponente de la ecucación, o sea $n^2$, por lo tanto la complejidad del algortimo es $n^2$
 
 
     \item \textbf{Ejercicio 2}
